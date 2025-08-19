@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galeria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2><a href="index.html">🢤</a></h2>
+  
+  <h2><p style="text-align: center;">Galeria</p></h2>
+
+  <div id="galeria"></div>
+
+   <script>
+  const imagens = [
+    { titulo: "15 de Março", url: "img/toy.jpeg" },
+    { titulo: "15 de Março", url: "img/juntos.jpeg" },
+    { titulo: "14 de Junho", url: "img/espelho.jpeg" },
+    { titulo: "10 de Agosto", url: "img/irmãos.jpeg" },
+    { titulo: "19 de Janeiro", url: "img/sentado.jpeg" },
+    { titulo: "31 de Março", url: "img/estudando.jpeg" },
+    { titulo: "11 de Fevereiro", url: "img/ele.jpeg" },
+    { titulo: "25 de Fevereiro", url: "img/moto.jpeg" },
+    { titulo: "26 de Fevereiro", url: "img/flores.jpeg" },
+    { titulo: "9 de Março", url: "img/chapeu.jpeg" },
+    { titulo: "9 de Março", url: "img/shopping.jpeg" },
+    { titulo: "15 de Março", url: "img/carro.jpeg" },
+    { titulo: "20 de Abril", url: "img/quarto.jpeg" },
+    { titulo: "23 de Fevereiro", url: "img/estrela.jpeg" },
+    { titulo: "1 de Janeiro", url: "img/rosto.jpeg" },
+    { titulo: "30 de Março", url: "img/jogando.jpeg" },
+    { titulo: "2 de Maio", url: "img/branco.jpeg" },
+    { titulo: "26 de Maio", url: "img/coracao.jpeg" },
+    { titulo: "17 de Janeiro", url: "img/cinza.jpeg" },
+    { titulo: "21 de Dezembro", url: "img/celular.jpeg" },
+    { titulo: "4 de Fevereiro", url: "img/tres.jpeg" },
+    { titulo: "26 de Fevereiro", url: "img/dois.jpeg" },
+    { titulo: "15 de Março", url: "img/juntos2.jpeg" },
+    { titulo: "Hello Kitty 3", url: "img/hello3.jpg" },
+  ];
+
+  const galeria = document.getElementById('galeria');
+  imagens.forEach(img => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <img src="${img.url}" alt="${img.titulo}">
+      <h3>${img.titulo}</h3>
+    `;
+    galeria.appendChild(card);
+  });
+</script>
+
+
+</body>
+</html>
